@@ -6,7 +6,7 @@ const projects = [
         githubLink: "https://github.com/Shafiya0101/Building-a-NN-Classifier"
     },
     {
-        image: "images/Chess_Pieces_Detection--YOLO-v5.png", // Updated to match the document title
+        image: "images/YOLOv5.png", // Updated to match the document title
         title: "Chess_Pieces_Detection--YOLO-v5",
         description: "A comprehensive YOLOv5-based computer vision project for detecting and classifying chess pieces (both black and white) on a chessboard, featuring complete training workflow, model deployment, and video inference capabilities.",
         githubLink: "https://github.com/Shafiya0101/Chess_Pieces_Detection--YOLO-v5"
