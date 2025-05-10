@@ -2,14 +2,14 @@ const projects = [
     {
         image: "images/NN Classifier.png",
         title: "Building-a-NN-Classifier",
-        description: "A comparative implementation of Fully-Connected and Convolutional Neural Networks for classifying dandelions and grass plants using the CIFAR dataset, featuring performance evaluation through accuracy metrics, ROC-AUC analysis, and visualization tools.", // Placeholder for your description
-        githubLink: "https://github.com/Shafiya0101/Building-a-NN-Classifier" // Replace with actual GitHub link
+        description: "A comparative implementation of Fully-Connected and Convolutional Neural Networks for classifying dandelions and grass plants using the CIFAR dataset, featuring performance evaluation through accuracy metrics, ROC-AUC analysis, and visualization tools.",
+        githubLink: "https://github.com/Shafiya0101/Building-a-NN-Classifier"
     },
     {
-        image: "images/YOLOV5.png",
+        image: "images/Chess_Pieces_Detection--YOLO-v5.png", // Updated to match the document title
         title: "Chess_Pieces_Detection--YOLO-v5",
-        description: "A comprehensive YOLOv5-based computer vision project for detecting and classifying chess pieces (both black and white) on a chessboard, featuring complete training workflow, model deployment, and video inference capabilities.", // Placeholder for your description
-        githubLink: "https://github.com/Shafiya0101/Chess_Pieces_Detection--YOLO-v5" // Replace with actual GitHub link
+        description: "A comprehensive YOLOv5-based computer vision project for detecting and classifying chess pieces (both black and white) on a chessboard, featuring complete training workflow, model deployment, and video inference capabilities.",
+        githubLink: "https://github.com/Shafiya0101/Chess_Pieces_Detection--YOLO-v5"
     },
     {
         image: "images/Encoder-Decoder.png",
