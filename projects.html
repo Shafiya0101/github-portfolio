@@ -1,49 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shafiya - Projects</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Works — Shafiya Kausar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,500&family=JetBrains+Mono:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
 </head>
-<body class="bg-gradient-to-br from-purple-100 via-blue-100 to-pink-100 min-h-screen">
-    <nav class="bg-white shadow-lg sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <a href="index.html" class="text-2xl font-bold text-purple-600">
-                        <i class="fas fa-code"></i>
-                    </a>
-                </div>
-                <div class="flex items-center space-x-4">
-                    <a href="index.html" class="text-gray-700 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                    <a href="about.html" class="text-gray-700 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium">About</a>
-                    <a href="projects.html" class="text-gray-700 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
-                    <a href="technologies.html" class="text-gray-700 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium">Technologies</a>
-                    <a href="contact.html" class="text-gray-700 hover:text-purple-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
-                    <a href="https://linkedin.com/in/kausarshafiya" target="_blank" class="text-gray-700 hover:text-purple-600 px-3 py-2">
-                        <i class="fab fa-linkedin fa-lg"></i>
-                    </a>
-                    <a href="https://github.com/Shafiya0101" target="_blank" class="text-gray-700 hover:text-purple-600 px-3 py-2">
-                        <i class="fab fa-github fa-lg"></i>
-                    </a>
-                </div>
-            </div>
+<body>
+
+<header class="masthead">
+  <div class="left">Works · §04</div>
+  <div class="center">Issue 02 · May 2026 · Paris</div>
+  <div class="right"><span class="pulse-dot"></span><span class="js-clock">—</span></div>
+</header>
+
+<nav class="spine">
+  <a href="index.html" class="brand">Shafiya <span class="amp">&amp;</span> Co.</a>
+  <button class="nav-toggle" aria-label="Toggle menu">Menu</button>
+  <div class="nav-links">
+    <a href="index.html">Cover</a>
+    <a href="about.html">Profile</a>
+    <a href="experience.html">Career</a>
+    <a href="projects.html">Works</a>
+    <a href="certifications.html">Awards</a>
+    <a href="volunteering.html">Service</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<main>
+
+  <section class="page-header">
+    <div class="kicker kicker-left"><span>Works · The Catalogue</span></div>
+    <h1 class="display-large">A <em>curated</em> selection<br/>from the <em>workshop</em>.</h1>
+    <p class="standfirst">Ten works spanning LLM research, computer vision, deep learning, healthcare ML, and analytics. Source on <a href="https://github.com/Shafiya0101" target="_blank" rel="noopener" style="color:var(--accent); border-bottom:1px solid var(--accent);">GitHub</a>.</p>
+  </section>
+
+  <div class="filter-strip">
+    <button class="active" data-filter="all">All</button>
+    <button data-filter="llm">LLM &amp; Research</button>
+    <button data-filter="cv">Computer Vision</button>
+    <button data-filter="dl">Deep Learning</button>
+    <button data-filter="health">Healthcare</button>
+    <button data-filter="mlops">MLOps &amp; Analytics</button>
+  </div>
+
+  <div class="gallery" id="gallery"></div>
+
+</main>
+
+<footer class="colophon">
+  <div class="colophon-grid">
+    <div>
+      <div class="col-title">Colophon</div>
+      <p style="font-size:0.85rem; line-height:1.6; max-width:38ch;">
+        Set in <em>Fraunces</em>, <em>Source Serif 4</em>, and <em>JetBrains Mono</em>. Designed and built by Shafiya in Paris.
+      </p>
+    </div>
+    <div>
+      <div class="col-title">Find</div>
+      <a href="https://github.com/Shafiya0101" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/kausarshafiya" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://medium.com/@fnusk" target="_blank" rel="noopener">Medium</a>
+    </div>
+    <div>
+      <div class="col-title">Read</div>
+      <a href="about.html">Profile</a>
+      <a href="experience.html">Career</a>
+      <a href="volunteering.html">Service</a>
+    </div>
+    <div>
+      <div class="col-title">Contact</div>
+      <a href="mailto:shafiya.kausar@aivancity.education">Email</a>
+      <a href="contact.html">All channels</a>
+    </div>
+  </div>
+  <div class="colophon-bottom">
+    <span class="imprint">© 2026 <em>Shafiya Kausar</em> &nbsp;·&nbsp; §04 Works</span>
+    <span>Ten works · Source on GitHub</span>
+  </div>
+</footer>
+
+<div class="page-num">— 004 —</div>
+
+<script>
+  const projects = [
+    {
+      title: "Signal Density — When LLM Signals Hurt",
+      cat: "Research · Negative Results",
+      desc: "A negative-results study of LLM-augmented reinforcement learning for stock trading on the Nasdaq-100, 2019–2023. Includes signal density coverage analysis and non-RL baselines. Published openly because the field needs more honest failure reports.",
+      tags: ["LLM", "RL", "research"],
+      cats: ["llm"],
+      size: "large",
+      link: "https://github.com/Shafiya0101/signal-density-llm-trading"
+    },
+    {
+      title: "Mitigating Hallucination in Scientific LLM Systems",
+      cat: "LLM · Framework",
+      desc: "Reading materials and engineering framework for safer LLM use in scientific contexts. A working repository of methods to reduce hallucination in domain-critical applications.",
+      tags: ["LLM", "NLP", "framework"],
+      cats: ["llm"],
+      size: "medium",
+      link: "https://github.com/Shafiya0101/llm-hallucination-mitigation"
+    },
+    {
+      title: "Resume Skill Extractor",
+      cat: "LLM · Web App",
+      desc: "Flask app that parses uploaded resumes and uses the Mistral API to extract and classify skills, then scores candidates against AI-school admission criteria. Around 95% precision on extraction.",
+      tags: ["LLM", "Flask", "Mistral"],
+      cats: ["llm"],
+      size: "small",
+      link: "https://github.com/Shafiya0101/Resume-Extractor"
+    },
+    {
+      title: "Chess Pieces Detection — YOLOv5",
+      cat: "Computer Vision · Detection",
+      desc: "A YOLOv5 model trained to detect and classify all twelve chess piece types on a board, reaching 92% mAP. Full pipeline from dataset preparation to video inference.",
+      tags: ["YOLOv5", "PyTorch"],
+      cats: ["cv"],
+      size: "medium",
+      link: "https://github.com/Shafiya0101/Chess_Pieces_Detection--YOLO-v5"
+    },
+    {
+      title: "Convolutional Auto-Encoder, CIFAR-100",
+      cat: "Deep Learning · Compression",
+      desc: "Image-compression auto-encoder hitting 83.3% compression on CIFAR-100 with average reconstruction PSNR of 23.65 dB. Architecture decisions and ablations documented in the repo.",
+      tags: ["auto-encoder", "TensorFlow"],
+      cats: ["cv", "dl"],
+      size: "medium",
+      link: "https://github.com/Shafiya0101/Convolutional-AutoEncoder-for-Cifar-dataset"
+    },
+    {
+      title: "FCN vs CNN — A Comparative Study",
+      cat: "Deep Learning · Classification",
+      desc: "Side-by-side study of fully-connected and convolutional architectures on a binary CIFAR subset. Evaluation includes accuracy, ROC-AUC, and decision-boundary visualisations.",
+      tags: ["Keras", "classification"],
+      cats: ["dl"],
+      size: "small",
+      link: "https://github.com/Shafiya0101/Building-a-NN-Classifier"
+    },
+    {
+      title: "Heart Disease Prediction",
+      cat: "Healthcare ML",
+      desc: "Classification model predicting cardiovascular risk from clinical features. Includes EDA, feature engineering, model selection, and evaluation against standard healthcare baselines.",
+      tags: ["healthcare", "scikit-learn"],
+      cats: ["health", "dl"],
+      size: "small",
+      link: "https://github.com/Shafiya0101/Heart-Disease-Prediction"
+    },
+    {
+      title: "ML Model Performance Dashboard",
+      cat: "MLOps · Observability",
+      desc: "A Python dashboard for tracking and visualising ML model performance over time — comparing runs, surfacing drift, and giving teams a single view of model health.",
+      tags: ["MLOps", "dashboards"],
+      cats: ["mlops"],
+      size: "medium",
+      link: "https://github.com/Shafiya0101/ML_Model_Performance_Dashboard"
+    },
+    {
+      title: "AI Model Comparison Dashboard",
+      cat: "MLOps · Evaluation",
+      desc: "A side-by-side comparison tool for evaluating multiple AI models on the same task. Built to make benchmark results visible and reproducible across the team's workflow.",
+      tags: ["MLOps", "evaluation"],
+      cats: ["mlops"],
+      size: "medium",
+      link: "https://github.com/Shafiya0101/AI_Model_Comparison_Dashboard"
+    },
+    {
+      title: "E-commerce Analytics Dashboard",
+      cat: "Analytics · BI",
+      desc: "Interactive dashboard surfacing key business metrics across $106M in revenue and 113K customers (2015–2021) — product performance, sales trends, and segment filters for deeper analysis.",
+      tags: ["BI", "Power BI"],
+      cats: ["mlops"],
+      size: "small",
+      link: "https://github.com/Shafiya0101/E-commerce-Dashboard-"
+    }
+  ];
+
+  const gallery = document.getElementById('gallery');
+  function pad(n) { return String(n).padStart(3, '0'); }
+
+  function render(filter = 'all') {
+    gallery.innerHTML = '';
+    const filtered = filter === 'all' ? projects : projects.filter(p => p.cats.includes(filter));
+    filtered.forEach((p, i) => {
+      const a = document.createElement('a');
+      a.className = `gallery-item gi-${p.size}`;
+      a.href = p.link;
+      a.target = '_blank';
+      a.rel = 'noopener';
+      a.innerHTML = `
+        <div class="gi-top">
+          <span class="gi-num">№ ${pad(i + 1)} / ${pad(filtered.length)}</span>
+          <span class="gi-arrow">↗</span>
         </div>
-    </nav>
+        <span class="gi-cat">${p.cat}</span>
+        <h3 class="gi-title">${p.title}</h3>
+        <p class="gi-desc">${p.desc}</p>
+        <div class="gi-tags">${p.tags.map(t => `<span class="gi-tag">${t}</span>`).join('')}</div>
+      `;
+      gallery.appendChild(a);
+      requestAnimationFrame(() => a.classList.add('is-visible'));
+    });
+  }
 
-    <section class="py-16 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center animate-slide-up">My Projects</h2>
-        <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Projects will be dynamically populated by script.js -->
-        </div>
-    </section>
+  render();
+  document.querySelectorAll('.filter-strip button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-strip button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      render(btn.dataset.filter);
+    });
+  });
+</script>
 
-    <footer class="bg-gray-800 text-white text-center py-4">
-        <p>© 2025 Shafiya. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
