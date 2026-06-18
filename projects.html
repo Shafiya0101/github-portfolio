@@ -12,9 +12,9 @@
 <body>
 
 <header class="masthead">
-  <div class="left">Works · §04</div>
-  <div class="center">Issue 02 · May 2026 · Paris</div>
-  <div class="right"><span class="pulse-dot"></span><span class="js-clock">—</span></div>
+  <div class="left">Works</div>
+  <div class="center"></div>
+  <div class="right"></div>
 </header>
 
 <nav class="spine">
@@ -25,6 +25,7 @@
     <a href="about.html">Profile</a>
     <a href="experience.html">Career</a>
     <a href="projects.html">Works</a>
+    <a href="index.html#publications">Papers</a>
     <a href="certifications.html">Awards</a>
     <a href="volunteering.html">Service</a>
     <a href="contact.html">Contact</a>
@@ -36,7 +37,7 @@
   <section class="page-header">
     <div class="kicker kicker-left"><span>Works · The Catalogue</span></div>
     <h1 class="display-large">A <em>curated</em> selection<br/>from the <em>workshop</em>.</h1>
-    <p class="standfirst">Ten works spanning LLM research, computer vision, deep learning, healthcare ML, and analytics. Source on <a href="https://github.com/Shafiya0101" target="_blank" rel="noopener" style="color:var(--accent); border-bottom:1px solid var(--accent);">GitHub</a>.</p>
+    <p class="standfirst">A catalogue of works spanning medical &amp; multimodal AI, LLM research, computer vision, deep learning, and analytics. Source on <a href="https://github.com/Shafiya0101" target="_blank" rel="noopener" style="color:var(--accent); border-bottom:1px solid var(--accent);">GitHub</a>.</p>
   </section>
 
   <div class="filter-strip">
@@ -54,12 +55,6 @@
 
 <footer class="colophon">
   <div class="colophon-grid">
-    <div>
-      <div class="col-title">Colophon</div>
-      <p style="font-size:0.85rem; line-height:1.6; max-width:38ch;">
-        Set in <em>Fraunces</em>, <em>Source Serif 4</em>, and <em>JetBrains Mono</em>. Designed and built by Shafiya in Paris.
-      </p>
-    </div>
     <div>
       <div class="col-title">Find</div>
       <a href="https://github.com/Shafiya0101" target="_blank" rel="noopener">GitHub</a>
@@ -79,36 +74,88 @@
     </div>
   </div>
   <div class="colophon-bottom">
-    <span class="imprint">© 2026 <em>Shafiya Kausar</em> &nbsp;·&nbsp; §04 Works</span>
-    <span>Ten works · Source on GitHub</span>
+    <span class="imprint">© 2026 <em>Shafiya Kausar</em></span>
   </div>
 </footer>
 
-<div class="page-num">— 004 —</div>
 
 <script>
   const projects = [
     {
-      title: "Signal Density — When LLM Signals Hurt",
-      cat: "Research · Negative Results",
-      desc: "A negative-results study of LLM-augmented reinforcement learning for stock trading on the Nasdaq-100, 2019–2023. Includes signal density coverage analysis and non-RL baselines. Published openly because the field needs more honest failure reports.",
+      title: "Medical AI Dashboard",
+      cat: "Healthcare \u00b7 Medical Imaging",
+      desc: "Streamlit dashboard for medical imaging: DICOM metadata exploration, chest X-ray classification with ResNet50 and ViT (~0.95 AUC) plus Grad-CAM interpretability, and 3D organ segmentation with a MONAI U-Net.",
+      tags: ["PyTorch", "MONAI", "ViT"],
+      cats: ["health", "cv", "dl"],
+      size: "large",
+      link: "https://github.com/Shafiya0101/medical-ai-dashboard"
+    },
+    {
+      title: "MIMIC-II Disease Phenotyping",
+      cat: "Healthcare \u00b7 Unsupervised ML",
+      desc: "Unsupervised phenotyping of ICU patients on MIMIC-II, discovering patient subgroups with PCA, UMAP and KMeans. Ships an interactive Streamlit dashboard and a CI-tested pipeline.",
+      tags: ["clustering", "UMAP", "Streamlit"],
+      cats: ["health", "mlops"],
+      size: "medium",
+      link: "https://github.com/Shafiya0101/mimic-phenotyping"
+    },
+    {
+      title: "FedHealth \u2014 Federated Learning",
+      cat: "Healthcare \u00b7 Privacy",
+      desc: "Privacy-preserving federated learning (PyTorch FedAvg) for heart-disease risk prediction across simulated hospitals \u2014 sites share model parameters, never records. Tested library, CLI, and Streamlit UI.",
+      tags: ["federated", "PyTorch"],
+      cats: ["health", "dl"],
+      size: "medium",
+      link: "https://github.com/Shafiya0101/fedhealth"
+    },
+    {
+      title: "WorldMedQA \u00d7 BiomedCLIP",
+      cat: "Multimodal \u00b7 Medical VLM",
+      desc: "Zero-shot multimodal medical question-answering using Microsoft's BiomedCLIP vision-language model on the 568-question WorldMedQA-V benchmark, with a Streamlit demo.",
+      tags: ["BiomedCLIP", "multimodal"],
+      cats: ["llm", "health", "cv"],
+      size: "medium",
+      link: "https://github.com/Shafiya0101/worldmedqa-biomedclip"
+    },
+    {
+      title: "Voice HMI \u2014 ASR Benchmark",
+      cat: "Speech \u00b7 Benchmark",
+      desc: "A controlled benchmark of open-source ASR models (Whisper, Wav2Vec2, Vosk) for voice-controlled robotic pick-and-place across accents and noise, with a custom command-recognition metric and statistical testing.",
+      tags: ["Whisper", "ASR", "stats"],
+      cats: ["llm", "mlops"],
+      size: "medium",
+      link: "https://github.com/Shafiya0101/voice_hmi_benchmark"
+    },
+    {
+      title: "Euromotion \u2014 Agentic System Dynamics",
+      cat: "Agentic AI \u00b7 Full-Stack",
+      desc: "A system-dynamics supply-chain simulator (FastAPI + React) with an LLM agent that edits the model from natural language \u2014 adjust parameters, visualise stocks and flows, and modify the model via chat.",
+      tags: ["LLM agent", "FastAPI", "React"],
+      cats: ["llm", "mlops"],
+      size: "large",
+      link: "https://github.com/Shafiya0101/euromotion-system-dynamics"
+    },
+    {
+      title: "Signal Density \u2014 When LLM Signals Hurt",
+      cat: "Research \u00b7 Negative Results",
+      desc: "Code and trained models for the published study on LLM-augmented reinforcement learning for stock trading on the Nasdaq-100, 2019\u20132023 \u2014 signal coverage-density analysis and honest non-RL baselines.",
       tags: ["LLM", "RL", "research"],
       cats: ["llm"],
-      size: "large",
-      link: "https://github.com/Shafiya0101/signal-density-llm-trading"
+      size: "medium",
+      link: "https://github.com/Shafiya0101/llm-rl-trading-multiseed"
     },
     {
       title: "Mitigating Hallucination in Scientific LLM Systems",
-      cat: "LLM · Framework",
-      desc: "Reading materials and engineering framework for safer LLM use in scientific contexts. A working repository of methods to reduce hallucination in domain-critical applications.",
+      cat: "LLM \u00b7 Framework",
+      desc: "Reading materials and an engineering framework for safer LLM use in scientific contexts \u2014 a working repository of methods to reduce hallucination in domain-critical applications.",
       tags: ["LLM", "NLP", "framework"],
       cats: ["llm"],
-      size: "medium",
+      size: "small",
       link: "https://github.com/Shafiya0101/llm-hallucination-mitigation"
     },
     {
       title: "Resume Skill Extractor",
-      cat: "LLM · Web App",
+      cat: "LLM \u00b7 Web App",
       desc: "Flask app that parses uploaded resumes and uses the Mistral API to extract and classify skills, then scores candidates against AI-school admission criteria. Around 95% precision on extraction.",
       tags: ["LLM", "Flask", "Mistral"],
       cats: ["llm"],
@@ -116,8 +163,8 @@
       link: "https://github.com/Shafiya0101/Resume-Extractor"
     },
     {
-      title: "Chess Pieces Detection — YOLOv5",
-      cat: "Computer Vision · Detection",
+      title: "Chess Pieces Detection \u2014 YOLOv5",
+      cat: "Computer Vision \u00b7 Detection",
       desc: "A YOLOv5 model trained to detect and classify all twelve chess piece types on a board, reaching 92% mAP. Full pipeline from dataset preparation to video inference.",
       tags: ["YOLOv5", "PyTorch"],
       cats: ["cv"],
@@ -126,21 +173,12 @@
     },
     {
       title: "Convolutional Auto-Encoder, CIFAR-100",
-      cat: "Deep Learning · Compression",
+      cat: "Deep Learning \u00b7 Compression",
       desc: "Image-compression auto-encoder hitting 83.3% compression on CIFAR-100 with average reconstruction PSNR of 23.65 dB. Architecture decisions and ablations documented in the repo.",
       tags: ["auto-encoder", "TensorFlow"],
       cats: ["cv", "dl"],
-      size: "medium",
-      link: "https://github.com/Shafiya0101/Convolutional-AutoEncoder-for-Cifar-dataset"
-    },
-    {
-      title: "FCN vs CNN — A Comparative Study",
-      cat: "Deep Learning · Classification",
-      desc: "Side-by-side study of fully-connected and convolutional architectures on a binary CIFAR subset. Evaluation includes accuracy, ROC-AUC, and decision-boundary visualisations.",
-      tags: ["Keras", "classification"],
-      cats: ["dl"],
       size: "small",
-      link: "https://github.com/Shafiya0101/Building-a-NN-Classifier"
+      link: "https://github.com/Shafiya0101/Convolutional-AutoEncoder-for-Cifar-dataset"
     },
     {
       title: "Heart Disease Prediction",
@@ -153,8 +191,8 @@
     },
     {
       title: "ML Model Performance Dashboard",
-      cat: "MLOps · Observability",
-      desc: "A Python dashboard for tracking and visualising ML model performance over time — comparing runs, surfacing drift, and giving teams a single view of model health.",
+      cat: "MLOps \u00b7 Observability",
+      desc: "A Python dashboard for tracking and visualising ML model performance over time \u2014 comparing runs, surfacing drift, and giving teams a single view of model health.",
       tags: ["MLOps", "dashboards"],
       cats: ["mlops"],
       size: "medium",
@@ -162,17 +200,26 @@
     },
     {
       title: "AI Model Comparison Dashboard",
-      cat: "MLOps · Evaluation",
+      cat: "MLOps \u00b7 Evaluation",
       desc: "A side-by-side comparison tool for evaluating multiple AI models on the same task. Built to make benchmark results visible and reproducible across the team's workflow.",
       tags: ["MLOps", "evaluation"],
       cats: ["mlops"],
-      size: "medium",
+      size: "small",
       link: "https://github.com/Shafiya0101/AI_Model_Comparison_Dashboard"
     },
     {
+      title: "FCN vs CNN \u2014 A Comparative Study",
+      cat: "Deep Learning \u00b7 Classification",
+      desc: "Side-by-side study of fully-connected and convolutional architectures on a binary CIFAR subset. Evaluation includes accuracy, ROC-AUC, and decision-boundary visualisations.",
+      tags: ["Keras", "classification"],
+      cats: ["dl"],
+      size: "small",
+      link: "https://github.com/Shafiya0101/Building-a-NN-Classifier"
+    },
+    {
       title: "E-commerce Analytics Dashboard",
-      cat: "Analytics · BI",
-      desc: "Interactive dashboard surfacing key business metrics across $106M in revenue and 113K customers (2015–2021) — product performance, sales trends, and segment filters for deeper analysis.",
+      cat: "Analytics \u00b7 BI",
+      desc: "Interactive Power BI dashboard surfacing key business metrics across sales, logistics and procurement \u2014 product performance, trends, and segment filters for deeper analysis.",
       tags: ["BI", "Power BI"],
       cats: ["mlops"],
       size: "small",
