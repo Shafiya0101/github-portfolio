@@ -1500,3 +1500,29 @@ footer.colophon .colophon-bottom .imprint em {
 @media (max-width: 720px) {
   .page-num { display: none; }
 }
+
+/* ---- Publications (added) ---- */
+.pub-list { display: flex; flex-direction: column; gap: 1.1rem; margin-top: 1.75rem; }
+.pub-item {
+  display: block; border: 1px solid rgba(0,0,0,0.14); border-radius: 2px;
+  padding: 1.2rem 1.5rem; transition: border-color .2s ease, transform .2s ease;
+}
+.pub-item:hover { border-color: var(--accent); transform: translateY(-2px); }
+.pub-status {
+  font-family: 'JetBrains Mono', monospace; font-size: 0.68rem;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent);
+}
+.pub-item h3 {
+  font-family: 'Fraunces', serif; font-weight: 500; font-size: 1.18rem;
+  line-height: 1.28; margin: 0.55rem 0 0.5rem;
+}
+.pub-item p { font-size: 0.92rem; line-height: 1.55; margin: 0; opacity: 0.85; }
+.pub-links {
+  display: inline-block; margin-top: 0.7rem;
+  font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; letter-spacing: 0.04em;
+}
+.pub-links a { color: var(--accent); border-bottom: 1px solid var(--accent); }
+
+/* ---- Company links on Career page (added) ---- */
+.org .org-link { color: inherit; border-bottom: 1px solid var(--accent); transition: color .15s ease; }
+.org .org-link:hover { color: var(--accent); }
