@@ -83,6 +83,15 @@
 <script>
   const projects = [
     {
+      title: "OncoTwin \u2014 Cancer Patient Digital Twin",
+      cat: "Healthcare \u00b7 Digital Twin",
+      desc: "Probabilistic patient digital twin fusing medical imaging with structured clinical data to forecast disease progression and simulate treatment strategies. Ships with a 3D interface for scenario exploration.",
+      tags: ["PyTorch", "MONAI", "3D"],
+      cats: ["health", "dl", "cv"],
+      size: "large",
+      link: "https://github.com/Shafiya0101/OncoTwin"
+    },
+    {
       title: "Medical AI Dashboard",
       cat: "Healthcare \u00b7 Medical Imaging",
       desc: "Streamlit dashboard for medical imaging: DICOM metadata exploration, chest X-ray classification with ResNet50 and ViT (~0.95 AUC) plus Grad-CAM interpretability, and 3D organ segmentation with a MONAI U-Net.",
@@ -99,6 +108,15 @@
       cats: ["health", "mlops"],
       size: "medium",
       link: "https://github.com/Shafiya0101/mimic-phenotyping"
+    },
+    {
+      title: "PhenoPrompt \u2014 Clinical Phenotyping via NER + RAG",
+      cat: "Healthcare \u00b7 Clinical NLP",
+      desc: "Natural-language querying over a phenotype space built from clinical notes. Pipeline: medkit NER \u2192 HDBSCAN clustering \u2192 entity-augmented RAG retrieval. Presented at IANLP 2026 with a live Streamlit demo.",
+      tags: ["medkit", "HDBSCAN", "RAG"],
+      cats: ["health", "llm"],
+      size: "large",
+      link: "https://github.com/Shafiya0101/PhenoPrompt"
     },
     {
       title: "FedHealth \u2014 Federated Learning",
@@ -137,6 +155,15 @@
       link: "https://github.com/Shafiya0101/euromotion-system-dynamics"
     },
     {
+      title: "Climate Displacement Research Agent",
+      cat: "Agentic AI \u00b7 Production RAG",
+      desc: "Production research agent for climate-displacement literature: hybrid retrieval (BM25 + dense + RRF), cross-encoder reranking, a custom MCP server, layered guardrails, and a critic agent that reviews outputs before they ship.",
+      tags: ["RAG", "MCP", "guardrails"],
+      cats: ["llm", "mlops"],
+      size: "medium",
+      link: "https://github.com/Shafiya0101/climate-displacement-agent"
+    },
+    {
       title: "Signal Density \u2014 When LLM Signals Hurt",
       cat: "Research \u00b7 Negative Results",
       desc: "Code and trained models for the published study on LLM-augmented reinforcement learning for stock trading on the Nasdaq-100, 2019\u20132023 \u2014 signal coverage-density analysis and honest non-RL baselines.",
@@ -146,13 +173,13 @@
       link: "https://github.com/Shafiya0101/llm-rl-trading-multiseed"
     },
     {
-      title: "Mitigating Hallucination in Scientific LLM Systems",
-      cat: "LLM \u00b7 Framework",
-      desc: "Reading materials and an engineering framework for safer LLM use in scientific contexts \u2014 a working repository of methods to reduce hallucination in domain-critical applications.",
-      tags: ["LLM", "NLP", "framework"],
+      title: "Metacognitive Uncertainty Layer",
+      cat: "LLM \u00b7 Hallucination Detection",
+      desc: "Hallucination detection layer combining self-consistency, semantic entropy, logit calibration and NLI contradiction-checking. Evaluated across three models and four datasets (incl. MedQA). A fingerprint-aware adaptive policy raises accuracy from 76.5% to 93.9% on TriviaQA at 81.5% coverage \u2014 basis of the PyConES 2026 workshop.",
+      tags: ["LLM", "uncertainty", "NLI"],
       cats: ["llm"],
-      size: "small",
-      link: "https://github.com/Shafiya0101/llm-hallucination-mitigation"
+      size: "large",
+      link: "https://github.com/Shafiya0101/metacognitive-uncertainty-layer"
     },
     {
       title: "Resume Skill Extractor",
@@ -171,6 +198,15 @@
       cats: ["cv"],
       size: "medium",
       link: "https://github.com/Shafiya0101/Chess_Pieces_Detection--YOLO-v5"
+    },
+    {
+      title: "AADMN \u2014 Graph-Based Detection Re-scoring",
+      cat: "Computer Vision \u00b7 Detection + GNN",
+      desc: "YOLOv8n + GNN/GAT ablation study for detection re-scoring in crowded scenes on CrowdHuman \u2014 a graph over candidate boxes lets the model reason about occlusion. Pre-publication.",
+      tags: ["YOLOv8", "GAT", "CrowdHuman"],
+      cats: ["cv", "dl"],
+      size: "medium",
+      link: "https://github.com/Shafiya0101/AADMN"
     },
     {
       title: "Convolutional Auto-Encoder, CIFAR-100",
